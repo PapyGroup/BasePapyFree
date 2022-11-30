@@ -1,0 +1,25 @@
+**Installation de toutes les Bases Papy**
+
+*Etape 1*
+Générer vos deux clés (licence fivem + steam apikey) puis les ajouter manuellement dans le server.cfg
+Steam : https://steamcommunity.com/dev/apikey
+Clé licence FiveM : https://keymaster.fivem.net/
+
+```sv_licenseKey Votreclédelicence
+set steam_webApiKey  VotreSteamKey
+```
+
+*Etape 2*
+Modifier la ligne -- Base de données :  nomdevotrebdd-- et injecter votre fichier sql. 
+```--
+-- Base de données :  `votrenombdd` --```
+
+*Etape 3*
+Modifier votre server.cfg afin de lier votre base de données 
+```set mysql_connection_string "server=XXXXXXX;database=XXXXXXXX;userid=XXXXXXX;password=XXXXXXX"```
+Remplacer les *XXXX* par vos infos de connection de votre bdd. 
+
+*Note*
+Sachez que la plupart des script sont configurables et personnalisables dans les fichiers config.lua des scripts.
+
+Bon jeux à vous !
